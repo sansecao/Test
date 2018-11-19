@@ -52,3 +52,16 @@ function functionTest() {
     var expect = arguments[arguments.length - 1]; //The last parameter is the default error message
     addItemToTheResult(result, expect, name, message);
 }
+
+//global function: run test cases of relavant component
+//Method of calling: runComponentTestCase('GlobalMenu',obj);
+function runComponentTestCase(componentName, obj) {
+    if (typeof(FMTest[componentName]) == "function") {
+        FMTest[componentName] = new FMTest[componentName]();
+    }
+    for (item in FMTest[componentName]) {
+        if (typeof FMTest[componentName][item] === 'function') {
+            FMTest[componentName][item](obj);
+        }
+    }
+}
