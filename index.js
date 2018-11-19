@@ -39,3 +39,16 @@ function addItemToTheResult(result, expect, name, message) {
     item.innerHTML = "<p>" + str + "</p>";
     $(".resultItem")[0].appendChild(item);
 }
+
+function functionTest() {
+    var message = arguments[2]; //Custom error messages are not accepted
+    var result;
+    try {
+        result = arguments[0](arguments[3], arguments[4], arguments[5], arguments[6], arguments[7], arguments[8], arguments[9], arguments[10], arguments[11], arguments[12]);
+    } catch (err) {
+        message = err.message;
+    }
+    var name = arguments[1];
+    var expect = arguments[arguments.length - 1]; //The last parameter is the default error message
+    addItemToTheResult(result, expect, name, message);
+}
