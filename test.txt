@@ -1,6 +1,7 @@
 少时诵诗书所所所所所所
 ssssssssssssssss
 fast-forward fast-forward fast-forward fast-forward
+提交到远程分支
 chekut  checjout
 pull request
 git push origin
