@@ -1,12 +1,4 @@
 少时诵诗书所所所所所所
 ssssssssssssssss
 fast-forward fast-forward fast-forward fast-forward
-<<<<<<< HEAD
-�ύ��Զ�̷�֧
-chekut  checjout
-pull request
-git push origin
-=======
-提交到远程分支
 
->>>>>>> bb29934c26c98ec0aaab2a3d54dd69c5873f71e5
